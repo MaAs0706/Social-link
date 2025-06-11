@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden; /* Ensures the image doesn't overflow the circular container */
+}
+
+.profile-pic {
+    width: 100%; /* Makes the image fill the container */
+    height: 100%; /* Makes the image fill the container */
+    object-fit: cover; /* Scales the image to cover the container, cropping if needed */
+    display: block; /* Ensures the image behaves as a block element */
+    border-radius: 50%; /* Ensures the image itself is circular */
+}
+
+.name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.location {
+    font-size: 14px;
+    color: #00ff00;
+    margin: 5px 0;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #ccc;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-btn {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: #000;
+}
